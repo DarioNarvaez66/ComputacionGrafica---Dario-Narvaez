@@ -1,0 +1,100 @@
+/* Importar fuente "Nerko One" desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+:root {
+  --color-titulo: #ff4900;
+  --fuente-titulo: 2rem;
+
+  --color-parrafo-1: #0093FF;   
+  --fuente-parrafo-1: 1rem;
+  --fuente-arial: Arial, sans-serif;
+
+  --color-parrafo-2: #c500ff;
+  --fuente-parrafo-2: 12px;
+  --fuente-nerko: 'Nerko One', cursive;
+
+  --color-link: #001bff;
+  --color-visited: #4CAF50;
+  --color-hover: #ff6600;
+
+  --color-header-tabla: #000000;
+  --color-header-texto: #ffffff;
+  --fuente-header: 1.5rem;
+
+  --color-fila-1y3: #bec1c3;
+  --color-texto-fila-1y3: #000000;
+
+  --color-fila-central: #045795;
+  --color-texto-central: #ffffff;
+}
+
+/* Estilos generales */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fuente-arial);
+}
+
+/* Título */
+h2 {
+  color: var(--color-titulo);
+  font-size: var(--fuente-titulo);
+}
+
+/* Párrafos */
+p.parrafo1 {
+  font-size: var(--fuente-parrafo-1);
+  color: var(--color-parrafo-1);
+  font-family: var(--fuente-arial);
+}
+
+p.parrafo2 {
+  font-size: var(--fuente-parrafo-2);
+  color: var(--color-parrafo-2);
+  font-family: var(--fuente-nerko);
+}
+
+/* Links */
+a {
+  color: var(--color-link);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--color-visited);
+}
+
+a:hover {
+  color: var(--color-hover);
+  text-decoration: underline;
+}
+
+/* Tabla */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  background-color: var(--color-header-tabla);
+  color: var(--color-header-texto);
+  font-size: var(--fuente-header);
+  padding: 10px;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+  font-size: var(--fuente-header);
+}
+
+tr:nth-child(2), tr:nth-child(4) {
+  background-color: var(--color-fila-1y3);
+  color: var(--color-texto-fila-1y3);
+}
+
+tr:nth-child(3) {
+  background-color: var(--color-fila-central);
+  color: var(--color-texto-central);
+}

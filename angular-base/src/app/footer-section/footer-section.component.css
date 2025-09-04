@@ -1,0 +1,15 @@
+.footer-section {
+  background-color: gray;
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 200px;
+  max-width: 250px;
+  text-align: center;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.footer-section:hover {
+  transform: scale(1.05);
+}
