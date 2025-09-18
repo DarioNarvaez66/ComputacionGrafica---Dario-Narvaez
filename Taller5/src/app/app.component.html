@@ -1,0 +1,51 @@
+<h1>Registro de Cliente</h1>
+
+<div class="registro-container">
+    <div id="usuario" class="seccion">
+        <h2>Datos Personales</h2>
+        <div class="campo">
+            <label>Nombre Completo:</label>
+            <float-label-basic-demo></float-label-basic-demo>
+        </div>
+        <div class="campo">
+            <label>Identificación:</label>
+            <input-mask-basic-demo></input-mask-basic-demo>
+        </div>
+        <div class="campo">
+            <label>Tel o Celular:</label>
+            <input-mask-basic-demo></input-mask-basic-demo>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="Seleccion" class="seccion">
+        <h2>Datos Adicionales</h2>
+        <div class="campo">
+            <label>Género:</label>
+            <radio-button-demo></radio-button-demo>
+        </div>
+        <div class="campo">
+            <label>Fecha de nacimiento:</label>
+            <datepicker-basic-demo></datepicker-basic-demo>
+        </div>
+        <div class="campo">
+            <label>Cliente Activo:</label>
+            <toggle-switch-basic-demo></toggle-switch-basic-demo>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="Comentarios" class="seccion">
+        <h2>Sugerencias</h2>
+        <panel-basic-demo></panel-basic-demo>
+    </div>
+
+    <div class="acciones">
+        <button-directive-demo></button-directive-demo>
+    </div>
+
+</div>
+
+<router-outlet />

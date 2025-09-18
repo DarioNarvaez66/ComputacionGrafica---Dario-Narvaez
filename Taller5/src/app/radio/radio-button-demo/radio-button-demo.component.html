@@ -1,0 +1,11 @@
+<div *ngFor="let g of genders" class="p-field-radiobutton">
+  <p-radioButton
+    name="gender"
+    [value]="g.value"
+    [(ngModel)]="selectedGender"
+    [inputId]="g.value">
+  </p-radioButton>
+  <label [for]="g.value">{{ g.name }}</label>
+</div>
+
+<p *ngIf="selectedGender">Seleccionado: {{ selectedGender }}</p>
